@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mfs.ashish.cinemahall">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CinemaHall">
-        <activity android:name=".SplashScreenActivity"
+        <activity android:name=".home.tv.TvActivity"></activity>
+        <activity android:name=".home.welcome.WelcomeActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +23,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".home.movie.MovieOverviewActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

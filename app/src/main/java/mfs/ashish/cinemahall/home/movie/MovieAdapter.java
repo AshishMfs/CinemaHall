@@ -1,4 +1,4 @@
-package mfs.ashish.cinemahall.home;
+package mfs.ashish.cinemahall.home.movie;
 
 import android.view.LayoutInflater;
 import android.view.View;
